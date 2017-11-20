@@ -1,3 +1,4 @@
+HEAD
 # Brunch + Babel/ES6
 
 This is a modern JS skeleton for [Brunch](http://brunch.io).
@@ -26,3 +27,6 @@ To use proposed JS features not included into ES6, do this:
 
 * `npm install --save-dev babel-preset-stage-0`
 * in `brunch-config.js`, add the preset: `presets: ['latest', 'stage-0']`
+=======
+# portfolio
+8dcbf665e25092ed9a01842176525f4915dbd8a9
