@@ -1,0 +1,17 @@
+@mixin flex($justify-content, $flex-direction, $align-items)
+  align-items: $align-items
+  display: flex
+  flex-direction: $flex-direction
+  justify-content: $justify-content
+
+@mixin font-styles($size, $weight, $line-height, $color)
+  color: $color
+  font-size: $size
+  font-weight: $weight
+  line-height: $line-height
+
+@mixin image($url)
+  background-image: url($url)
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover

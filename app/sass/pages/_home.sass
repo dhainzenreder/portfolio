@@ -1,0 +1,52 @@
+html
+  scroll-behavior: smooth
+
+.hero
+  @include flex (center, row, center)
+  height: 90vh
+  position: fixed
+  width: 100vw
+  z-index: -1
+
+.hero-title
+  height: 250px
+  width: 70%
+
+.projects
+  background-color: $white
+  display: grid
+  grid-auto-rows: minmax(30vw, auto)
+  grid-template-columns: repeat(3, 1fr)
+  grid-template-rows: repeat(4, 25vw)
+  margin: 100vh auto 50px
+  width: 90vw
+
+.soy-luna
+  @include image('images/soy-luna-cover.gif')
+
+.bankly
+  @include image('images/bankly-cover.png')
+
+.vdeo
+  @include image('images/vdeo-cover.png')
+
+.ipanema
+  @include image('images/ipanema-cover.png')
+
+.getnet
+  @include image('images/getnet-cover.png')
+
+.besafe
+  @include image('images/besafe-cover.png')
+
+.kikast
+  @include image('images/kikast-cover.png')
+
+.burger-in-the-box
+  @include image('images/burger-in-the-box-cover.png')
+
+.run-calendar
+  @include image('images/run-calendar-cover.png')
+
+.terra
+  @include image('images/terra-cover.png')

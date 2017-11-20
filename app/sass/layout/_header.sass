@@ -1,0 +1,25 @@
+header
+	@include flex (space-between, row, center)
+	height: 70px
+	margin: auto
+	width: 90vw
+
+.logo
+	background-color: $jet
+	border-radius: 0 24px 24px 0
+	height: 32px
+	width: 32px
+
+.menu-items
+	@include font-styles($size-b, $bold, $size-c, $jet)
+	@include flex(space-around, row, center)
+	width: 20vw
+
+.menu-item
+
+	> a
+		@include font-styles($size-b, $light, $size-c, $jet)
+
+		&:hover
+			opacity: 0.5
+			transition: all 0.3s ease
