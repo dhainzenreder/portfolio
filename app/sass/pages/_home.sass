@@ -9,10 +9,11 @@ html
   z-index: -1
 
 .hero-title
-  height: 250px
-  width: 70%
+  height: 300px
+  width: 80%
 
-a
+.project-text-hover-animation
+
   &:hover
 
     > section
@@ -25,6 +26,7 @@ a
   @include flex (flex-start, row, center)
   height: 100vh
   margin: 100vh 0 0 0
+  position: -webkit-sticky
   position: sticky
   top: 0
   width: 100vw
@@ -32,14 +34,35 @@ a
 .project-text
   margin: 0 50px
   transform: translateX(-50vw)
+  transition: all 0.3s ease
   width: 50vw
 
 .project-year
   @include font-styles($size-a, $regular, $size-b, $white)
 
 .soy-luna
-  background-color: $soy-luna
+  background-color: $gainsboro
 
 .bankly
-  background-image: linear-gradient(135deg, #19FFD7 0%, #33CC64 100%)
+  background-color: $gainsboro
   margin: 0
+  z-index: 2
+
+.vdeo
+  background-color: $gainsboro
+  margin: 0
+  z-index: 3
+
+.ipanema
+  background-color: $gainsboro
+  margin: 0
+  z-index: 4
+
+.getnet
+  background-color: $gainsboro
+  margin: 0
+  z-index: 5
+
+
+
+
