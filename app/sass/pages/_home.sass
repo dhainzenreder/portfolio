@@ -16,6 +16,10 @@ html
 
   &:hover
 
+    > .soy-luna
+        background-blend-mode: multiply
+        transition: all 0.3s ease
+
     > section
     
       > div
@@ -23,8 +27,8 @@ html
         transition: all 0.3s ease
 
 .project
-  @include flex (flex-start, row, center)
-  background-color: $mist
+  @include flex(flex-start, row, center)
+  background-color: $coal
   height: 100vh
   margin: 100vh 0 0 0
   position: -webkit-sticky
@@ -39,7 +43,7 @@ html
   width: 40vw
 
 .project-year
-  @include font-styles($size-a, $regular, $size-b, $coal)
+  @include font-styles($size-a, $regular, $size-b, $white)
 
 .project-cover
   height: 700px
@@ -58,6 +62,11 @@ html
   position: absolute
   width: 100%
   z-index: 1
+
+.soy-luna
+  @include image("images/soy-luna-cover-background.png")
+  background-blend-mode: overlay
+  transition: all 0.3s ease
 
 .bankly
   margin: 0
