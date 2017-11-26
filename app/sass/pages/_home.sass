@@ -12,7 +12,7 @@ html
   height: 300px
   width: 80%
 
-.project-text-hover-animation
+.project-text--animation
 
   &:hover
 
@@ -24,6 +24,7 @@ html
 
 .project
   @include flex (flex-start, row, center)
+  background-color: $mist
   height: 100vh
   margin: 100vh 0 0 0
   position: -webkit-sticky
@@ -38,28 +39,22 @@ html
   width: 50vw
 
 .project-year
-  @include font-styles($size-a, $regular, $size-b, $white)
+  @include font-styles($size-a, $regular, $size-b, $coal)
 
-.soy-luna
-  background-color: $gainsboro
 
 .bankly
-  background-color: $gainsboro
   margin: 0
   z-index: 2
 
 .vdeo
-  background-color: $gainsboro
   margin: 0
   z-index: 3
 
 .ipanema
-  background-color: $gainsboro
   margin: 0
   z-index: 4
 
 .getnet
-  background-color: $gainsboro
   margin: 0
   z-index: 5
 
