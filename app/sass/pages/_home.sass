@@ -36,11 +36,28 @@ html
   margin: 0 50px
   transform: translateX(-50vw)
   transition: all 0.3s ease
-  width: 50vw
+  width: 40vw
 
 .project-year
   @include font-styles($size-a, $regular, $size-b, $coal)
 
+.project-cover
+  height: 700px
+  position: relative
+  transform: translateX(+50vw)
+  width: 700px
+
+.project-device
+  height: 100%
+  position: absolute
+  width: 100%
+  z-index: 2
+
+.project-shadow
+  height: 100%
+  position: absolute
+  width: 100%
+  z-index: 1
 
 .bankly
   margin: 0
