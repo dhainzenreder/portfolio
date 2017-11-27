@@ -31,6 +31,16 @@ html
   transform: translateX(-50%)
   z-index: -2
 
+.intro
+  @include flex(space-around, column, flex-start)
+  background-color: $coal
+  height: 100vh
+  padding: 20%
+  position: -webkit-sticky
+  position: sticky
+  top: 0
+  width: 100vw
+
 .project-text--animation
 
   &:hover

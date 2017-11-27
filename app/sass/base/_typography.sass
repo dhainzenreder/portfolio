@@ -79,3 +79,21 @@ h2
 .p1
   @include font-styles($size-e, $thin, $size-f, $gray)
 
+.p2
+  @include font-styles($size-c, $light, $size-d, $white)
+  margin: 20px 0
+
+  > a
+    @include font-styles($size-c, $regular, $size-d, $white)
+    text-decoration: underline
+    transition: all 0.3s ease
+
+    &:hover
+      opacity: 0.5
+      transition: all 0.3s ease
+
+
+.p3
+  @include font-styles($size-a, $regular, $size-b, $white)
+  margin: 20px 0
+
