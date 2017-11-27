@@ -1,15 +1,20 @@
 html
   scroll-behavior: smooth
 
+.cover
+  @include flex (space-between, column, center)
+  height: 100vh
+  width: 100vw
+
 .hero
   @include flex (center, row, center)
-  height: 90vh
   position: fixed
-  width: 100vw
+  top: 50%
+  transform: translateY(-50%)
+  width: 100%
   z-index: -1
 
 .hero-title
-  height: 300px
   width: 80%
 
 .hello
@@ -37,7 +42,6 @@ html
   @include flex(flex-start, row, center)
   background-color: $coal
   height: 100vh
-  margin: 100vh 0 0 0
   position: -webkit-sticky
   position: sticky
   top: 0
