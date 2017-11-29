@@ -45,7 +45,7 @@ html
 
   &:hover
 
-    > section
+    > a
     
       > .project-text
         transform: translateX(+50px)
@@ -64,9 +64,7 @@ html
   @include flex(flex-start, row, center)
   background-color: $coal
   height: 100vh
-  position: -webkit-sticky
-  position: sticky
-  top: 0
+  position: relative
   width: 100vw
 
 .project-text
@@ -74,6 +72,7 @@ html
   transform: translateX(-50vw)
   transition: all 0.3s ease
   width: 40vw
+  z-index: 1
 
 .project-year
   @include font-styles($size-a, $regular, $size-b, $white)
@@ -90,7 +89,6 @@ html
   transform: translateX(-50%)
   transition: all 0.3s ease
   width: 80%
-  z-index: -1
 
 .project-cover
   height: 80vh
