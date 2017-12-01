@@ -43,13 +43,15 @@ html
 
 .work
   @include flex(flex-start, column, center)
-  @include font-styles($size-h * 4, $extra-bold, $size-h, $coal)
   background-color: $white
   height: 120vh
   padding-top: 20vh
   position: relative
   text-align: center
   width: 100vw
+
+  > h2
+    @include font-styles($size-h * 4, $extra-bold, $size-h, $coal)
 
 .project
   @include flex(flex-start, row, center)
