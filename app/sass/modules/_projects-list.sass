@@ -1,37 +1,34 @@
-
-
 .projects
   height: 100vh
   position: relative
   width: 100vw
 
 .projects-list
-  background-color: $white
-  display: block
-  height: 100vw
-  margin: 0
-  overflow-y: auto
-  overflow-x: hidden
-  padding: 100vh 0 0 0
   position: absolute
+  display: block
   top: 0
   left: 0
+  width: 100vh
+  max-height: 100vw
+  margin: 0
+  background: #abc
+  overflow-y: auto
+  overflow-x: hidden
   transform: rotate(-90deg) translateY(-100vh)
   transform-origin: right top
-  white-space: nowrap
-  width: 100vh
+  padding: 100vh 0 0 0
 
 .project-item
-  box-sizing: border-box
   display: block
-  height: 50vw
-  position: relative
+  padding: 10%
+  background: #cab
   transform: rotate(90deg)
   transform-origin: right top
   width: 100vh
+  height: 100vh
 
   > h2
-    width: 100px
-    height: 400px
+    width: 100vh
+    height: 100vh
 
 
