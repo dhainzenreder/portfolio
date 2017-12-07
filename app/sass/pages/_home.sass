@@ -14,17 +14,18 @@ html
   overflow-x: hidden
   transform: rotate(-90deg) translateY(-100vh)
   transform-origin: right top
-  padding: 33.33vw 0 0 0
+  padding: 0
   white-space: nowrap
 
 .hero, .menu, .project-item
-  border-bottom: 1px solid $white
+  border-right: 1px solid $white
   display: block
   height: 100vh
   padding: 5px
   background: #cab
-  transform: rotate(90deg)
+  transform: rotate(90deg) translateX(-33.36vw)
   transform-origin: bottom left
   width: 33.33vw
-  margin: 0
+  margin: calc(-100vh + 33.36vw) 0
   white-space: normal
+
