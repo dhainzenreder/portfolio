@@ -1,31 +1,60 @@
-html
-  scroll-behavior: smooth
+::-webkit-scrollbar
+  width: 1px
+  height: 1px
+
+::-webkit-scrollbar-button
+  width: 1px
+  height: 1px
 
 .container
-  position: absolute
+  background-color: $white
   display: block
-  top: 0
+  position: absolute
   left: 0
-  width: 100vh
-  max-height: 100vw
   margin: 0
-  background: #abc
-  overflow-y: auto
+  max-height: 100vw
   overflow-x: hidden
+  overflow-y: auto
+  padding: 0
+  top: 0
   transform: rotate(-90deg) translateY(-100vh)
   transform-origin: right top
-  padding: 0
   white-space: nowrap
+  width: 100vh
 
-.hero, .menu, .project-item
-  border-right: 1px solid $white
+.panel
+  background-color: $white
+  border-right: 1px solid $mist
   display: block
   height: 100vh
-  padding: 5px
-  background: #cab
+  margin: calc(-100vh + 33.36vw) 0
   transform: rotate(90deg) translateX(-33.36vw)
   transform-origin: bottom left
-  width: 33.33vw
-  margin: calc(-100vh + 33.36vw) 0
   white-space: normal
+  width: 33.33vw
+
+.project-item, .menu
+  @include flex(flex-start, row, center)
+  padding: 70px
+
+  > div
+    height: 50vh
+
+.menu
+  @include flex(flex-start, row, center)
+  background-color: $coal
+
+.menu-item
+  @include font-styles($size-e, $bold, $size-e, $white)
+  margin: 20px 0
+
+  > a
+      @include font-styles($size-e, $light, $size-e, $white)
+      text-decoration: none
+      transition: all 0.3s ease
+
+      &:hover
+        margin-left: 10px
+        text-decoration: line-through
+        transition: all 0.3s ease
 

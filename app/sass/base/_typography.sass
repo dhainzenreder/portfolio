@@ -74,24 +74,19 @@ h1
   @include font-styles($size-h, $extra-bold, $size-h, $coal)
 
 h2
-  @include font-styles($size-g, $bold, $size-g, $coal)
+  @include font-styles($size-f, $bold, $size-f, $coal)
+
+h3
+  @include font-styles($size-a, $bold, $size-a, $gray)
+  margin: 10px 5px
+  text-transform: uppercase
 
 .p1
   @include font-styles($size-e, $thin, $size-f, $gray)
 
 .p2
-  @include font-styles($size-c, $light, $size-d, $coal)
-  margin: 20px 0
-
-  > a
-    @include font-styles($size-c, $regular, $size-d, $coal)
-    text-decoration: underline
-    transition: all 0.3s ease
-
-    &:hover
-      opacity: 0.5
-      transition: all 0.3s ease
-
+  @include font-styles($size-c, $light, $size-d, $gray)
+  margin: 10px 0
 
 .p3
   @include font-styles($size-a, $regular, $size-b, $coal)
