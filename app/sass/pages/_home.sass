@@ -33,15 +33,27 @@
   white-space: normal
   width: 33.33vw
 
-.project-item, .menu
-  @include flex(flex-start, row, center)
+.hero, .project-item, .menu
+  @include flex(center, column, flex-start)
   padding: 70px
+  transition: all 0.3s ease
 
   > div
     height: 50vh
 
+.hero-link
+
+  &:hover
+
+    > .hero
+        background-color: $coal
+        transition: all 0.3s ease
+
+        > h1
+            color: $white
+            transition: all 0.3s ease
+
 .menu
-  @include flex(flex-start, row, center)
   background-color: $coal
 
 .menu-item
