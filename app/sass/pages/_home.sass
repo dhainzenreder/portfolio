@@ -23,6 +23,25 @@
   white-space: nowrap
   width: 100vh
 
+ul.container > a > li > img
+  height: 0%
+  opacity: 0
+  transition: all 0.3s ease
+  width: auto
+
+ul.container > a
+
+  &:hover
+
+    > .soy-luna
+        background-color: $soy-luna
+
+    > li > img
+        height: 50%
+        opacity: 1
+        transition: all 0.3s ease
+        width: auto
+
 .panel
   background-color: $white
   border-right: 1px solid $mist
