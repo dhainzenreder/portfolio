@@ -7,8 +7,25 @@ header
 	width: 100vw
 	z-index: 2
 
+	> a
+		transition: all 0.3s ease
+
+		&:hover
+			opacity: 0.75
+			transition: all 0.3s ease
+
 .logo
 	background-color: $coal
 	border-radius: 0 24px 24px 0
 	height: 32px
 	width: 32px
+
+.ic-menu
+	@include flex (space-around, column, center)
+	height: 16px
+	width: 16px
+
+.ic-menu-bar
+	background-color: $coal
+	height: 2px
+	width: 100%
