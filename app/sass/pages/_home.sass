@@ -34,13 +34,23 @@ ul.container > a
   &:hover
 
     > .soy-luna
+        @include image("images/soy-luna-cover.gif")
         background-color: $soy-luna
+        background-position: bottom
 
-    > li > img
-        height: 50%
-        opacity: 1
-        transition: all 0.3s ease
-        width: auto
+    > li > div
+
+        > h3
+            color: $mist
+            transition: all 0.3s ease
+
+        > h2
+            color: $white
+            transition: all 0.3s ease
+
+        > p
+            color: $mist
+            transition: all 0.3s ease
 
 .panel
   background-color: $white
@@ -59,7 +69,7 @@ ul.container > a
   transition: all 0.3s ease
 
   > div
-    height: 50vh
+    height: 60%
 
 .hero-link
 
