@@ -24,19 +24,19 @@
   width: 100vh
 
 ul.container > a > li > img
-  height: 0%
+  bottom: 0
+  height: auto
   opacity: 0
+  position: absolute
   transition: all 0.3s ease
-  width: auto
+  width: 100%
 
 ul.container > a
 
   &:hover
 
     > .soy-luna
-        @include image("images/soy-luna-cover.gif")
         background-color: $soy-luna
-        background-position: bottom
 
     > .games4u
         background-color: $games4u
@@ -56,6 +56,10 @@ ul.container > a
     > .terra
         background-color: $terra
 
+    >li > img
+            opacity: 1
+            transition: all 0.3s ease
+
     > li > div
 
         > h3
@@ -72,6 +76,7 @@ ul.container > a
 
 .panel
   background-color: $white
+  background-position: bottom
   border-right: 1px solid $mist
   display: block
   height: 100vh
@@ -88,6 +93,9 @@ ul.container > a
 
   > div
     height: 60%
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
 
 .hero-link
 
