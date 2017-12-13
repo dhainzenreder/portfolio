@@ -35,11 +35,14 @@ ul.container > a
 
   &:hover
 
-    > .soy-luna
-        background-color: $soy-luna
+    > .hero
+        background-color: $coal
 
     > .games4u
         background-color: $games4u
+
+    > .soy-luna
+        background-color: $soy-luna
 
     > .vdeo
         background-color: $vdeo
@@ -62,34 +65,23 @@ ul.container > a
 
     > li > div
 
-        > h3
-            color: $white
-            transition: all 0.3s ease
-
-        > h2
-            color: $white
-            transition: all 0.3s ease
-
-        > p
+        > h1, h2, h3, p
             color: $white
             transition: all 0.3s ease
 
 .panel
+  @include flex(center, column, flex-start)
   background-color: $white
   background-position: bottom
   border-right: 1px solid $mist
   display: block
   height: 100vh
   margin: calc(-100vh + 33.36vw) 0
-  padding: 70px
   transform: rotate(90deg) translateX(-33.36vw)
   transform-origin: bottom left
+  transition: all 0.3s ease
   white-space: normal
   width: 33.33vw
-
-.hero, .project-item, .menu
-  @include flex(center, column, flex-start)
-  transition: all 0.3s ease
 
   > div
     height: 60%
@@ -97,21 +89,6 @@ ul.container > a
     position: absolute
     top: 50%
     transform: translateY(-50%)
-
-.project-item
-  padding: 0
-
-.hero-link
-
-  &:hover
-
-    > .hero
-        background-color: $coal
-        transition: all 0.3s ease
-
-        > h1
-            color: $white
-            transition: all 0.3s ease
 
 .menu
   background-color: $coal
@@ -129,4 +106,3 @@ ul.container > a
         margin-left: 10px
         text-decoration: line-through
         transition: all 0.3s ease
-
