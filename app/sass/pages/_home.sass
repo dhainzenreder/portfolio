@@ -72,12 +72,32 @@ ul.container > a
         background-blend-mode: soft-light
         background-color: $terra
 
+    > .bank-app
+        @include image("images/bank-app-cover-background@2x.png")
+        background-blend-mode: saturation
+        background-color: $bank-app
+
+    > .besafe
+        @include image("images/besafe-cover-background@2x.png")
+        background-blend-mode: soft-light
+        background-color: $besafe
+
+    > .burger-in-the-box
+        @include image("images/burger-in-the-box-cover-background@2x.png")
+        background-blend-mode: soft-light
+        background-color: $burger-in-the-box
+
+    > .run-calendar
+        @include image("images/run-calendar-cover-background@2x.png")
+        background-blend-mode: soft-light
+        background-color: $run-calendar
+
     >li > img
             opacity: 1
             transition: all 0.3s ease
 
     > li > div
-            transform: translateY(-55%)
+            transform: translateY(-60%)
             transition: all 0.3s ease
 
             > h1, h2, h3, p
