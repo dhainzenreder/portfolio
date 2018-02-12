@@ -61,7 +61,9 @@ ul.container > a
             background-color: $ipanema
 
         > .getnet
-            background-blend-mode: exclusion
+            +image("images/getnet-cover-background@2x.png")
+
+            background-blend-mode: soft-light
             background-color: $getnet
 
         > .kikast
@@ -79,14 +81,32 @@ ul.container > a
         > .bank-app
             +image("images/bank-app-cover-background@2x.png")
 
-            background-blend-mode: saturation
+            background-blend-mode: soft-light
             background-color: $bank-app
+
+        > .eygl
+            +image("images/eygl-cover-background@2x.png")
+
+            background-blend-mode: soft-light
+            background-color: $eygl
 
         > .besafe
             +image("images/besafe-cover-background@2x.png")
 
             background-blend-mode: soft-light
             background-color: $besafe
+
+        > .retailpar
+            +image("images/retailpar-cover-background@2x.png")
+
+            background-blend-mode: overlay
+            background-color: $retailpar
+
+        > .crowdstuffer
+            +image("images/crowdstuffer-cover-background@2x.png")
+
+            background-blend-mode: soft-light
+            background-color: $crowdstuffer
 
         > .burger-in-the-box
             +image("images/burger-in-the-box-cover-background@2x.png")
