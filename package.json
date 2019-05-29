@@ -10,16 +10,16 @@
     "build": "brunch build --production"
   },
   "dependencies": {
-    "npm": "^5.7.1"
+    "npm": "^6.9.0"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2",
-    "babel-brunch": "~6.0",
+    "babel-brunch": "^7.0.1",
     "babel-preset-latest": "^6",
-    "brunch": "^2",
+    "brunch": "~2.10",
     "clean-css-brunch": "^2",
-    "node-sass": "^4.11.0",
-    "sass-brunch": "^2.10.4",
+    "node-sass": "^4.12.0",
+    "sass-brunch": "^2.10.8",
     "sass-loader": "^7.1.0",
     "uglify-js-brunch": "^2"
   }
